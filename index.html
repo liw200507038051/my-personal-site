@@ -3,163 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="李旺的个人主页、简历与作品集。" />
-    <title>李旺 - 嵌入式开发工程师</title>
+    <meta name="description" content="小李的网络空间：嵌入式开发、项目实践与联系方式。" />
+    <title>小李的网络空间</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="noise" aria-hidden="true"></div>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="返回首页">
-        <span class="brand-mark">A.</span>
-        <span>anesh703.xyz</span>
-      </a>
-      <nav aria-label="站内导航">
-        <a href="#about">关于我</a>
-        <a href="#work">经历</a>
-        <a href="#skills">技能</a>
-        <a href="#contact">联系</a>
-        <a class="nav-resume" href="./小李.wps" download="小李.wps">下载简历</a>
-      </nav>
-      <button class="icon-button theme-toggle" type="button" aria-label="切换配色" title="切换配色">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z" /></svg>
-      </button>
+      <a class="brand" href="#top" aria-label="返回首页"><span class="brand-mark">小</span><span>小李的网络空间</span></a>
+      <nav aria-label="站内导航"><a href="#about">关于我</a><a href="#projects">项目</a><a href="#contact">联系</a><a class="nav-resume" href="./简历.pdf" download="小李-简历.pdf">下载简历</a></nav>
+      <button class="icon-button theme-toggle" type="button" aria-label="切换配色" title="切换配色">◐</button>
     </header>
-
     <main id="top">
-      <section class="hero section-shell">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> OPEN TO NEW IDEAS</p>
-          <h1>你好，我是<br /><span>李旺.</span></h1>
-          <p class="intro">电子信息工程本科生，专注嵌入式开发与 C/C++。<br />喜欢把软硬件之间复杂的问题，做成稳定而清晰的体验。</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#work">查看经历 <span aria-hidden="true">↓</span></a>
-            <a class="button resume-button" href="./小李.wps" download="小李.wps">下载简历 <span aria-hidden="true">↓</span></a>
-            <a class="text-link" href="#contact">和我聊聊 <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-        <div class="hero-art" aria-label="个人头像图形">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="avatar">
-            <span>LW</span>
-            <small>EMBEDDED</small>
-          </div>
-          <div class="location-tag"><span>●</span> CHANGSHA / ONLINE</div>
-          <div class="scribble">BUILD<br />WITH CARE</div>
-        </div>
-        <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
-      </section>
-
-      <section class="ticker" aria-label="关键词">
-        <div>DESIGN <b>✳</b> BUILD <b>✳</b> LEARN <b>✳</b> SHARE <b>✳</b> DESIGN <b>✳</b> BUILD <b>✳</b> LEARN <b>✳</b> SHARE <b>✳</b></div>
-      </section>
-
-      <section class="about section-shell" id="about">
-        <div class="section-label">01 / ABOUT</div>
-        <div class="about-grid">
-          <h2>让代码连接硬件，<br />让想法稳定落地。</h2>
-          <div class="about-copy">
-            <p>我目前就读于中南林业科技大学电子信息工程专业，专业排名前 17%。具备嵌入式软硬件协同开发经验，熟悉从需求分析、模块开发到联调测试的完整流程。</p>
-            <div class="facts">
-              <div><span>BASE</span><strong>长沙 · 中国</strong></div>
-              <div><span>FOCUS</span><strong>嵌入式 / C/C++</strong></div>
-              <div><span>EDUCATION</span><strong>电子信息工程 · 本科</strong></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="work section-shell" id="work">
-        <div class="section-heading">
-          <div class="section-label">02 / EXPERIENCE</div>
-          <h2>经历摘要</h2>
-          <p>从嵌入式软件开发到校园组织协作，我在持续积累工程实践与沟通能力。</p>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="date">2026.02 - 2026.06</div>
-            <div class="timeline-role"><h3>嵌入式软件开发</h3><p>湖南省火灵工业设计有限公司</p></div>
-            <p class="timeline-detail">基于 XIAO SAMD21 完成裸机开发、外设驱动与功能验证，参与软硬件联调、问题定位和成品测试。</p>
-            <span class="arrow">↗</span>
-          </article>
-          <article class="timeline-item">
-            <div class="date">2025.03 - 2025.07</div>
-            <div class="timeline-role"><h3>学院学生会宣传部部长</h3><p>中南林业科技大学</p></div>
-            <p class="timeline-detail">负责学院公众号内容运营、选题策划、文案撰写与图文发布，并推进校内宣传活动落地。</p>
-            <span class="arrow">↗</span>
-          </article>
-          <article class="timeline-item">
-            <div class="date">2024.03 - 2024.07</div>
-            <div class="timeline-role"><h3>校学生会副部长</h3><p>中南林业科技大学</p></div>
-            <p class="timeline-detail">参与文档规范、场地安排、活动对接及会议执行，在多方协作中保证活动有序推进。</p>
-            <span class="arrow">↗</span>
-          </article>
-          <article class="timeline-item">
-            <div class="date">2026.05 - 2026.07</div>
-            <div class="timeline-role"><h3>OpenCV / Qt 人脸识别系统</h3><p>个人项目</p></div>
-            <p class="timeline-detail">使用 OpenCV 与 Qt 探索桌面端视觉应用开发，完成从图像处理到界面交互的项目实践。</p>
-            <span class="arrow">↗</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="skills section-shell" id="skills">
-        <div class="section-label">03 / TOOLKIT</div>
-        <div class="skills-head"><h2>工程工具箱</h2><p>面向嵌入式系统开发，也保持对桌面应用、网络协议和硬件设计的广泛兴趣。</p></div>
-        <div class="skill-list">
-          <div><span>01</span><strong>C / C++</strong><p>数据结构、算法、代码设计与调试</p></div>
-          <div><span>02</span><strong>Embedded Linux</strong><p>Shell、GCC、Make / CMake、IPC</p></div>
-          <div><span>03</span><strong>MCU & RTOS</strong><p>STM32、Arduino、C51、任务调度</p></div>
-          <div><span>04</span><strong>Hardware</strong><p>UART、SPI、I²C、CAN、PCB Layout</p></div>
-          <div><span>05</span><strong>Qt & Network</strong><p>Qt / MFC、Socket、TCP/IP、MQTT</p></div>
-        </div>
-      </section>
-
-      <section class="playground section-shell">
-        <div class="section-label">03 / LITTLE THINGS</div>
-        <div class="playground-grid">
-          <article class="music-card">
-            <div class="card-top"><span class="mini-label">NOW PLAYING</span><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
-            <div class="record-wrap"><div class="record"><div></div></div></div>
-            <div class="track-info"><div><h3>Quiet Afternoon</h3><p>Original ambient loop</p></div><span class="track-time">00:00</span></div>
-            <div class="progress"><span></span></div>
-            <div class="music-controls">
-              <button class="plain-control" type="button" aria-label="上一首" title="上一首">◀</button>
-              <button class="play-button" type="button" aria-label="播放背景音乐" title="播放背景音乐"><span class="play-icon">▶</span></button>
-              <button class="plain-control" type="button" aria-label="下一首" title="下一首">▶</button>
-              <label class="volume-control" aria-label="音乐音量"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6L8 10H4Zm12 0a3 3 0 0 1 0 4m2-7a7 7 0 0 1 0 10" /></svg><input type="range" min="0" max="100" value="35" /></label>
-            </div>
-          </article>
-          <article class="quote-card">
-            <span class="quote-mark">“</span>
-            <p>慢一点也没关系，<br />只要方向是自己选的。</p>
-            <button class="refresh-quote" type="button"><span>换一句</span> ↻</button>
-          </article>
-          <article class="note-card">
-            <span class="mini-label">TODAY'S NOTE</span>
-            <p id="daily-note">保持好奇，认真生活。</p>
-            <span class="note-date"></span>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact section-shell" id="contact">
-        <div class="contact-card">
-          <div><p class="eyebrow">05 / LET'S CONNECT</p><h2>期待下一次合作。</h2></div>
-          <div class="contact-links">
-            <a href="mailto:nameliwang1@outlook.com">nameliwang1@outlook.com <span>↗</span></a>
-            <a href="tel:17670610270">176 7061 0270 <span>↗</span></a>
-            <a href="./小李.wps" download="小李.wps">下载我的简历（WPS） <span>↓</span></a>
-          </div>
-        </div>
-      </section>
+      <section class="hero section-shell"><div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> ELECTRONICS · EMBEDDED · C/C++</p><h1>你好，我是<br /><span>小李。</span></h1><p class="intro">电子信息工程本科生，专注嵌入式开发与 C/C++。<br />这里记录我的学习、实践和正在构建的东西。</p><div class="hero-actions"><a class="button primary" href="#projects">浏览项目 <span aria-hidden="true">↓</span></a><a class="button" href="./简历.pdf" download="小李-简历.pdf">下载简历 <span aria-hidden="true">↓</span></a></div></div><aside class="hero-note"><span>现在</span><strong>持续学习，<br />认真做事。</strong><p>长沙 · 中国<br />开放交流与合作</p></aside></section>
+      <section class="about section-shell" id="about"><div class="section-label">01 / ABOUT</div><div class="about-grid"><h2>让代码连接硬件，<br />让想法稳定落地。</h2><div class="about-copy"><p>我就读于中南林业科技大学电子信息工程专业，具备嵌入式软硬件协同开发经验，熟悉从需求分析、模块开发到联调测试的完整流程。</p><div class="facts"><div><span>BASE</span><strong>长沙 · 中国</strong></div><div><span>FOCUS</span><strong>嵌入式 / C/C++</strong></div><div><span>EDUCATION</span><strong>电子信息工程 · 本科</strong></div></div></div></div></section>
+      <section class="projects section-shell" id="projects"><div class="section-heading"><div class="section-label">02 / PROJECTS</div><div><h2>项目工程</h2><p>这里将持续放入我的课程设计、嵌入式实践与个人作品。</p></div></div><div class="project-grid"><article class="project-card"><span class="project-index">PROJECT 01</span><h3>项目名称待补充</h3><p>在这里介绍项目目标、使用的硬件与软件、我的具体工作，以及最终成果。</p><span class="project-status">COMING SOON</span></article><article class="project-card"><span class="project-index">PROJECT 02</span><h3>项目名称待补充</h3><p>可以放置项目截图、演示视频、GitHub 地址或技术文章链接。</p><span class="project-status">COMING SOON</span></article><article class="project-card"><span class="project-index">PROJECT 03</span><h3>项目名称待补充</h3><p>建议按“背景 / 技术栈 / 难点 / 结果”的结构记录每个工程。</p><span class="project-status">COMING SOON</span></article></div></section>
+      <section class="skills section-shell"><div class="section-label">03 / TOOLKIT</div><div class="skills-list"><span>C / C++</span><span>STM32 / Arduino</span><span>Embedded Linux</span><span>Qt / Network</span><span>UART · SPI · I²C · CAN</span></div></section>
+      <section class="contact section-shell" id="contact"><div class="contact-card"><div><p class="eyebrow">04 / LET'S CONNECT</p><h2>期待下一次合作。</h2></div><div class="contact-links"><a href="mailto:nameliwang1@outlook.com">nameliwang1@outlook.com <span>↗</span></a><a href="tel:17670610270">176 7061 0270 <span>↗</span></a><a href="./简历.pdf" download="小李-简历.pdf">下载我的简历（PDF） <span>↓</span></a></div></div></section>
     </main>
-
-    <footer class="site-footer section-shell"><span>© <span id="year"></span> LI WANG</span><span>MADE WITH INTENTION</span><button class="back-top" type="button">BACK TO TOP ↑</button></footer>
+    <footer class="site-footer section-shell"><span>© <span id="year"></span> 小李的网络空间</span><button class="back-top" type="button">返回顶部 ↑</button></footer>
     <script src="app.js"></script>
   </body>
 </html>
