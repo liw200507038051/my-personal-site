@@ -1,0 +1,7 @@
+CREATE TABLE users (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(64) NOT NULL,
+  feature_path VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX idx_users_name ON users(name);
